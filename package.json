@@ -1,7 +1,7 @@
 {
   "name": "react-jade-page-transitions",
   "version": "1.0.0",
-  "description": "Example of isomorphic app with page transitions",
+  "description": "Example of react isomorphic app with page transitions",
   "main": "index.js",
   "scripts": {
     "watch-js": "watchify app/client.js -dv -t [ babelify ] -t react-jade -o app/dist/client.js",
