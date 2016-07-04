@@ -1,5 +1,5 @@
 import React from 'react'
-import jade from 'react-jade'
+const jade = require('react-jade')
 import { Link } from 'react-router'
 
 const template = jade.compileFile(__dirname + '/app.pug')
