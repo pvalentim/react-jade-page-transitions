@@ -1,0 +1,18 @@
+{
+  "name": "react-jade-page-transitions",
+  "version": "1.0.0",
+  "description": "Example of isomorphic app with page transitions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pedro Valentim",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta3",
+    "react": "^15.2.0",
+    "react-dom": "^15.2.0",
+    "react-pug": "0.0.0"
+  }
+}
