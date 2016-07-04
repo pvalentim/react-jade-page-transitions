@@ -4,15 +4,26 @@
   "description": "Example of isomorphic app with page transitions",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch-js": "watchify app/client.js -dv -t [ babelify ] -t react-jade -o app/dist/client.js",
+    "serve": "babel-node app/server.js",
+    "develop": "npm run watch-js & npm run serve"
   },
   "author": "Pedro Valentim",
   "license": "ISC",
   "dependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "brfs": "^1.4.3",
     "express": "^4.14.0",
     "pug": "^2.0.0-beta3",
     "react": "^15.2.0",
     "react-dom": "^15.2.0",
-    "react-pug": "0.0.0"
+    "react-jade": "^2.5.0",
+    "react-router": "^2.5.2"
+  },
+  "devDependencies": {
+    "watchify": "^3.7.0"
   }
 }
