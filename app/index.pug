@@ -1,6 +1,66 @@
 doctype html
 head
   title Isomorphic App with React Pug and Express
+  style.
+    body {
+      margin: 0;
+      font-family: Helvetica, sans-serif;
+    }
+    ul {
+      position: fixed;
+      top: 0;
+      left: 0;
+      margin: 0;
+      width: 100%;
+      height: 50px;
+      background-color: #333;
+    }
+
+    li {
+      display: inline-block;
+      width: 100px;
+    }
+
+    li a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      height: 50px;
+      line-height: 50px;
+      text-align: center
+    }
+
+    li a:hover {
+      background-color: #555;
+    }
+
+    #app-view section {
+      position: absolute;
+      top: 50px;
+      left: 30px;
+    }
+
+    .example-enter {
+      opacity: 0.01;
+      transform: translateX(-100px);
+    }
+
+    .example-enter.example-enter-active {
+      opacity: 1;
+      transform: translateX(0);
+      transition: all 500ms ease-in-out;
+    }
+
+    .example-leave {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .example-leave.example-leave-active {
+      opacity: 0.01;
+      transform: translateX(-100px);
+      transition: all 500ms ease-in-out;
+    }
 body
   #app-container!=reactContent
   script(src='assets/client.js')

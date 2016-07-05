@@ -19,6 +19,7 @@
     "express": "^4.14.0",
     "pug": "^2.0.0-beta3",
     "react": "^15.2.0",
+    "react-addons-css-transition-group": "^15.2.0",
     "react-dom": "^15.2.0",
     "react-jade": "^2.5.0",
     "react-router": "^2.5.2"
